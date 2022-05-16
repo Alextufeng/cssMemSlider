@@ -193,6 +193,7 @@ footer {
 }
 
 .text-wrapper {
+    flex-grow: 1;
     height: 4.3rem;
     overflow: hidden;
 }
