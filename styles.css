@@ -89,7 +89,7 @@ footer {
     gap: 1.5rem;
     width: calc(70vw * 5);
     height: 60vh;
-    padding: 2rem;
+    padding: 1rem;
     transition: transform 0.7s ease-in-out;
 }
 
