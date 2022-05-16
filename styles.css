@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Josefin+Sans&family=Macondo&family=Merriweather:wght@700&family=Roboto&display=swap');
+
+:root {
+    --color-primary: #F1CDB3;
+    --color-primary-light: #FDDCC4;
+    --color-dark-3xl: #292929;
+    --color-dark-s: #CDCDCD;
+    --color-dark-l: #545454;
+    --color-dark-xl: #4C4C4C;
+    --color-light-xl: #ffffff;
+    --color-light-l: #F6F6F6;
+    --color-light-s: #FAFAFA;
+    --color-dark-m: #B2B2B2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    display: none;
+}
+
+body {
+    display: flex;
+    flex-flow: column wrap;
+    row-gap: 0.2rem;
+    align-items: center;
+    background-color: var(--color-primary-light);
+}
+
+header {
+    width: 70vw;
+    margin: 0.2rem auto;
+    padding: 1rem;
+    background-color: var(--color-primary);
+    border-radius: 0.5rem;
+}
+
+footer {
+    width: 70vw;
+    margin: 0.2rem auto;
+    padding: 1rem;
+    background-color: var(--color-primary);
+    border-radius: 0.5rem;
+}
+
+.h1__text,
+.h3__text {
+    width: 100%;
+    text-align: center;
+    font-family: 'Macondo', cursive;
+    color: var(--color-dark-3xl);
+    transition: 0.7s ease-in-out;
+}
+
+.h3__text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.h1__text a,
+.h3__text a {
+    text-decoration: none;
+    color: var(--color-dark-3xl);
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 2rem;
+    width: 70vw;
+    margin: 0 auto;
+    padding: 1rem;
+    overflow: hidden;
+    background-color: var(--color-primary);
+    border-radius: 0.5rem;
+}
+
+.slide-wrapper {
+    width: 70vw;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    gap: 1.5rem;
+    width: calc(70vw * 5);
+    height: 60vh;
+    padding: 2rem;
+    transition: transform 0.7s ease-in-out;
+}
+
+.slides__item {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    filter: drop-shadow(0rem 0rem 0.4rem var(--color-dark-3xl));
+}
